@@ -10,70 +10,76 @@
 <body>
     <nav>
         <ul>
+            <li><a href="index.html">Project Page</a></li>
             <li><a href="home.html">Home</a></li>
             <li><a href="culture.html">Culture</a></li>
             <li><a href="landmark.html">Landmarks</a></li>
-            <li><a href="cusine.html">Cuisine</a></li>
+            <li><a href="cuisine.html">Cuisine</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
-    <h1>Contact Us</h1>
-    <p>Please fill out the form below for any inquiries or to register as a student.</p>
+    <section>
+        <h1>Contact Us</h1>
+        <p>Please fill out the form below for any inquiries or to register as a student.</p>
 
-    <h2>Student Registration Form</h2>
-    <form action="#" method="post">
-        <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name"><br><br>
+        <h2>Student Registration Form</h2>
+        <form action="#" method="post">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required><br><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
 
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
 
-        <label for="newsletter">Subscribe to Newsletter:</label>
-        <input type="checkbox" id="newsletter" name="newsletter" checked><br><br>
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" checked><br><br>
 
-        <label for="state">State:</label>
-        <select id="state" name="state">
-            <option value="">Select your state</option>
-            <option value="State1">State1</option>
-            <option value="State2">State2</option>
-            <option value="State3">State3</option>
-        </select><br><br>
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="" selected disabled>Select your state</option>
+                <option value="State1">State1</option>
+                <option value="State2">State2</option>
+                <option value="State3">State3</option>
+            </select><br><br>
 
-        <label for="resume">Upload Resume:</label>
-        <input type="file" id="resume" name="resume"><br><br>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required><br><br>
 
-        <label for="address">Address:</label>
-        <textarea id="address" name="address" rows="4" cols="50"
-            placeholder="Enter your full address"></textarea><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50"
+                placeholder="Enter your full address"></textarea><br><br>
 
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob"><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
 
-        <label for="interviewtime">Preferred Interview Time:</label>
-        <input type="time" id="interviewtime" name="interviewtime"><br><br>
+            <label for="interviewtime">Preferred Interview Time:</label>
+            <input type="time" id="interviewtime" name="interviewtime"><br><br>
 
-        <label for="marks">Marks:</label>
-        <input type="number" id="marks" name="marks"><br><br>
+            <label for="marks">Marks:</label>
+            <input type="number" id="marks" name="marks" required><br><br>
 
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-    </form>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
 
-    <h2>More Information</h2>
-    <p>Explore government job opportunities on the official OJAS website:</p>
-    <a href="https://ojas.gujarat.gov.in">
-        <iframe src="http://ojas.gujarat.gov.in" frameborder="2px" height="230"></iframe>
-    </a>
+    <section>
+        <h2>More Information</h2>
+        <p>Explore government job opportunities on the official OJAS website:</p>
+        <a href="https://ojas.gujarat.gov.in">
+            <iframe src="http://ojas.gujarat.gov.in" frameborder="2px" height="230"></iframe>
+        </a>
+    </section>
 
     <footer>
         <p><a href="home.html">Back to Home</a></p>
+        <p><a href="index.html">Back to Project Page</a></p>
         <p>Contact us at <a href="mailto:info@incredibleindia.com">info@incredibleindia.com</a></p>
         <p> &copy; 2025 Incredible India Project</p>
     </footer>
