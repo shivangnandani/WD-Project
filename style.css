@@ -6,6 +6,9 @@ body {
     color: #333;
 }
 
+h2{
+    font-size: xx-large;
+}
 nav {
     background: rgba(51, 51, 51, 0.9);
     padding: 15px 0;
@@ -45,6 +48,7 @@ nav ul li a:hover {
 
 nav ul li a.active {
     background: #f4a261;
+    color: #fff;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
@@ -57,6 +61,23 @@ section {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s;
 }
+
+.unique{
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    margin: 40px auto;
+    padding: 30px;
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.unique p{
+    text-align: center;
+}
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -113,10 +134,10 @@ img:active {
 }
  
 
-footer {
+/* footer {
     background-color: #222;
     color: white;
-    /* text-align: center; */
+    text-align: center;
     justify-content: center;
     padding: 20px 0;
     margin-top: 40px;
@@ -130,10 +151,41 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
+} */
+
+
+footer {
+    background-color: #222; 
+    color: #fff; 
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div{
+    margin-top: 10px;
+}
+
+footer a {
+    color: #f4a261; 
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 
-/* @media (max-width: 768px) {
+
+
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         text-align: center;
@@ -151,9 +203,42 @@ footer a:hover {
     table {
         font-size: 14px;
     }
+
+    h1, h2 {
+        font-size: 33px;
+    }
+    p, ul {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        padding: 10px;
+    }
+    footer {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 480px) {
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+    img {
+        width: 70%;
+    }
+    table {
+        font-size: 9px;
+    }
+
     h1, h2 {
         font-size: 22px;
     }
@@ -167,4 +252,4 @@ footer a:hover {
     footer {
         font-size: 14px;
     }
-} */
+}
