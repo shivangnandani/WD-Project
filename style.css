@@ -132,27 +132,6 @@ img:active {
     transform: scale(1.1);
     transition: 0.3s;
 }
- 
-
-/* footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    font-size: 16px;
-}
-footer a {
-    color: #ffd700;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: 0.3s;
-}
-footer a:hover {
-    text-decoration: underline;
-} */
-
 
 footer {
     background-color: #222; 
@@ -193,10 +172,6 @@ footer a:hover {
     nav ul li {
         margin: 10px 0;
     }
-    section {
-        width: 95%;
-        padding: 20px;
-    }
     img {
         width: 70%;
     }
@@ -205,17 +180,25 @@ footer a:hover {
     }
 
     h1, h2 {
-        font-size: 33px;
+        font-size: 27px;
     }
+    
     p, ul {
-        font-size: 20px;
+        font-size: 18px;
     }
+    
     nav ul li a {
-        font-size: 20px;
+        font-size: 18px;
         padding: 10px;
     }
+    
     footer {
-        font-size: 20px;
+        font-size: 18
+        px;
+    }
+    
+    nav{
+        background: rgba(51, 51, 51);
     }
 }
 
@@ -225,31 +208,30 @@ footer a:hover {
         flex-direction: column;
         text-align: center;
     }
-    nav ul li {
-        margin: 10px 0;
-    }
-    section {
-        width: 95%;
-        padding: 20px;
-    }
+    
     img {
         width: 70%;
     }
-    table {
-        font-size: 9px;
-    }
 
     h1, h2 {
-        font-size: 22px;
+        font-size: 30px;
     }
+    
     p, ul {
-        font-size: 16px;
-    }
-    nav ul li a {
-        font-size: 16px;
-        padding: 8px;
-    }
-    footer {
         font-size: 14px;
     }
+    
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    nav{
+        background: rgba(51, 51, 51);
+    }
+
+    table{
+        font-size: 12px;
+    }
+
 }
