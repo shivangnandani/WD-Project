@@ -251,7 +251,9 @@ input[type="reset"]:hover {
     background: #222;
 }
 
-
+section form input{
+        width: 80%;
+    }
 
 
 @media (max-width: 768px) {
@@ -312,6 +314,10 @@ input[type="reset"]:hover {
         width: 90%;
     }
 
+    section form input{
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -367,6 +373,10 @@ input[type="reset"]:hover {
 
     form {
         padding: 15px;
+    }
+
+    section form input{
+        width: 80%;
     }
 
 }
