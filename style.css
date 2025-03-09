@@ -11,7 +11,7 @@ body {
 
 }
 
-h2{
+h2 {
     font-size: xx-large;
 }
 
@@ -70,7 +70,7 @@ section {
 
 }
 
-.unique{
+.unique {
     background: linear-gradient(to right, #ffecd2, #fcb69f);
     margin: 40px auto;
     padding: 30px;
@@ -85,22 +85,31 @@ section {
 
 }
 
-.unique p{
+.unique p {
     text-align: center;
 }
 
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #d35400;
     text-align: center;
 }
 
-p, ul {
+p,
+ul {
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
@@ -116,9 +125,9 @@ img {
     transition: transform 0.3s ease;
 }
 
-img:hover {
+/* img:hover {
     transform: scale(1.05);
-}
+} */
 
 table {
     width: 100%;
@@ -127,7 +136,8 @@ table {
 
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
@@ -154,8 +164,8 @@ img:active {
 }
 
 footer {
-    background-color: #222; 
-    color: #fff; 
+    background-color: #222;
+    color: #fff;
     padding: 20px 0;
     margin-top: 40px;
     font-size: 16px;
@@ -165,12 +175,12 @@ footer {
     align-items: center;
 }
 
-footer div{
+/* footer div {
     margin-top: 10px;
-}
+} */
 
 footer a {
-    color: #f4a261; 
+    color: #f4a261;
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s ease;
@@ -181,10 +191,77 @@ footer a:hover {
     text-transform: uppercase;
 }
 
+/* From Uiverse.io by vinodjangid07 */
+.card {
+    /* width: fit-content; */
+    /* height: fit-content; */
+    /* background-color: rgb(238, 238, 238); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 25px 25px; */
+    gap: 20px;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055); */
+}
+
+/* for all social containers */
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    /* background-color: rgb(44, 44, 44); */
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+/* facebook*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 20px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 form {
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: 100px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -197,25 +274,31 @@ label {
     margin-top: 10px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 /* Gender and Newsletter Styling */
-.gender-options, .newsletter-option {
+.gender-options,
+.newsletter-option {
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .newsletter-option input {
     margin-left: 10px;
 }
+
+
 
 /* Buttons Styling */
 .button-group {
@@ -251,32 +334,149 @@ input[type="reset"]:hover {
     background: #222;
 }
 
-section form input{
-        width: 80%;
-    }
+section form input {
+    width: 80%;
+}
+
+
+/* From Uiverse.io by javierBarroso */
+.social-login-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    fill: #fff;
+}
+
+.social-login-icons svg {
+    width: 40px;
+}
+
+.social-icon-1,
+.social-icon-1-1,
+.social-icon-3,
+.social-icon-3-3 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 5px 0 0px 0;/
+    /* margin: 0; */
+}
+
+.icon svg {
+    fill: #fff;
+}
+
+.socialcontainer {
+    height: 60px;
+    overflow: hidden;
+}
+
+.social-icon-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+}
+
+.social-icon-1 svg,
+.social-icon-3 svg {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.social-icon-1-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.socialcontainer:hover .social-icon-1 {
+    transform: translateY(-55px);
+}
+
+.socialcontainer:hover .social-icon-1 svg,
+.socialcontainer:hover .social-icon-3 svg {
+    opacity: 1;
+}
+
+.social-icon-3 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: #316ff6;
+}
+
+.socialcontainer:hover .social-icon-3 {
+    transform: translateY(-55px);
+}
+
+section {
+    animation: fadeIn 2s ease-in-out;
+}
+
+ /* Smooth fade-in animation for sections */
+ @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navigation bar animation */
+nav {
+    animation: slideDown 0.8s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Adding a pulsing effect to active navigation */
+nav ul li a.active {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+}
+
+/* Floating animation for images */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+img {
+    animation: float 3s ease-in-out infinite;
+}
+
 
 
 @media (max-width: 768px) {
-    
-    nav{
+
+    nav {
         background: rgba(51, 51, 51, 0.9);
     }
-    
+
     nav ul {
         /* flex-direction: column; */
         text-align: center;
     }
-    
+
     nav ul li {
         margin: 10px 0;
     }
-    
+
     nav ul li a {
         font-size: 18px;
         padding: 10px;
     }
 
-    section,.unique{
+    section,
+    .unique {
         max-width: 80%;
 
         padding: 20px;
@@ -287,18 +487,20 @@ section form input{
         width: 70%;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
         font-size: 27px;
     }
-    
-    p, ul {
+
+    p,
+    ul {
         font-size: 18px;
     }
-    
+
     footer {
         font-size: 14px;
     }
-    
+
     table {
         width: 100%;
         overflow-x: auto;
@@ -306,26 +508,31 @@ section form input{
         width: 100%;
     }
 
-    th, td {
+    th,
+    td {
         padding: 8px;
     }
 
-    section, form {
+    section,
+    form {
         width: 90%;
     }
 
-    section form input{
+    section form input {
         width: 80%;
+    }
+    section form textarea#address{
+        width: 70%;
     }
 
 }
 
 @media (max-width: 480px) {
 
-    nav{
-        background: rgba(51, 51, 51 , 0.9);
+    nav {
+        background: rgba(51, 51, 51, 0.9);
     }
-    
+
     nav ul {
         /* flex-direction: column; */
         text-align: center;
@@ -340,22 +547,25 @@ section form input{
         padding: 8px;
     }
 
-    section,.unique{
+    section,
+    .unique {
         max-width: 80%;
-        
+
         padding: 25px;
 
     }
-    
+
     img {
         width: 70%;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
         font-size: 30px;
     }
-    
-    p, ul {
+
+    p,
+    ul {
         font-size: 13px;
 
     }
@@ -367,7 +577,8 @@ section form input{
         width: 100%;
     }
 
-    th, td {
+    th,
+    td {
         padding: 8px;
     }
 
@@ -375,8 +586,12 @@ section form input{
         padding: 15px;
     }
 
-    section form input{
+    section form input {
         width: 80%;
+    }
+    
+    section form textarea#address{
+        width: 70%;
     }
 
 }
